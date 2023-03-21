@@ -7,3 +7,5 @@ WORKDIR /app
 COPY target/dynamoss-0.0.2-SNAPSHOT.jar /app/dynamoss.jar
 
 ENTRYPOINT ["java", "-jar", "dynamoss.jar"]
+
+EXPOSE 8080/tcp
