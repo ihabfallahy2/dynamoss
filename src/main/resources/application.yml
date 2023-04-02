@@ -1,5 +1,5 @@
 spring:
   security:
     user:
-      name: ${USER_API_AUTH}
-      password: ${PASS_API_AUTH}
+      name: ihabfallahy
+      password: 1910Cxyte20162000
