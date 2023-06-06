@@ -1,0 +1,26 @@
+- icon: maven
+  message: Spring Boot
+
+- imageUrl: https://github.com/$owner/$repo/actions/workflows/ci.yml/badge.svg?branch=$branchName
+  url: https://github.com/$owner/$repo/actions/workflows/ci.yml?query=branch:$branchName
+
+- label: "PR Size"
+  message: "Large"
+  color: "red"
+  when: "$additions >= 500"
+
+- label: "PR Size"
+  message: "Medium"
+  color: "yellow"
+  when: "$additions > 200 && $additions < 500"
+
+- message: "Contributor"
+  color: "#000000"
+  when: "$payload.pull_request.author_association == 'CONTRIBUTOR'"
+
+- label: "Label"
+  message: "Feature"
+  when: "$labels.includes('Feature')"
+
+- imageUrl: "https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=https://pr-$prNumber.company.com"
+  url: "https://railway.app/project/46e579df-266b-43ea-8fce-a5f89e3ee6c1/service/bfb500a5-39c4-43aa-b0c2-39a50ae073a1"
