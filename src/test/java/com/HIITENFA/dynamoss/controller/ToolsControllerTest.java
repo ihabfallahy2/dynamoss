@@ -5,7 +5,6 @@ import com.HIITENFA.dynamoss.service.PctoolsService;
 import org.bson.types.ObjectId;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.ArgumentMatchers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -16,7 +15,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-public class PctoolsControllerTest {
+public class ToolsControllerTest {
 
     @InjectMocks
     PctoolsController demo;
@@ -24,13 +23,13 @@ public class PctoolsControllerTest {
     @Mock
     PctoolsService pctoolsService;
 
-    List<Pctools> pclist;
+    List<Pctools> plist;
 
     @BeforeEach
-    void Inicializar(){
+    void initializer(){
         MockitoAnnotations.openMocks(this);
 
-        pclist = new ArrayList<>();
+        plist = new ArrayList<>();
         Pctools pctools = new Pctools();
 
         pctools.set_id(new ObjectId());
@@ -41,14 +40,14 @@ public class PctoolsControllerTest {
         pctools.setDescripcion("");
         pctools.setNombre_corto("");
 
-        pclist.add(pctools);
+        plist.add(pctools);
 
-        when(pctoolsService.findAll()).thenReturn(pclist);
+        when(pctoolsService.findAll()).thenReturn(plist);
     }
 
     @Test
     void findAllTest(){
         List<Pctools> result = demo.findAll();
-        assertEquals(result,pclist);
+        assertEquals(result, plist);
     }
 }
