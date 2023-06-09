@@ -1,3 +1,6 @@
+<!-- [START BADGES] -->
+<!-- [END BADGES] -->
+
 # Dynamoss
 Dynamoss es un software backend multipropositos, servira como base para mucho otros proyectos a futuro que en principio no estan relacionados.
 
