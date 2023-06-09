@@ -1,2 +1,3 @@
 build: pom.xml
+doc: README.md
 test: src/test/**/*
