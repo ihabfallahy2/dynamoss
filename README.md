@@ -6,11 +6,6 @@
   <a href="https://github.com/ihabfallahy2/dynamoss/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
   <a href="https://github.com/marketplace/actions/dynamoss"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=marketplace&color=0076D6&style=flat-square&logo=google-chrome&logoColor=0076D6" alt="website" /></a>
 </p>
-
-<p align="center">
-  <a href="https://github.com/ihabfallahy2/dynamoss/actions/workflows/release.yml"><img src="https://img.shields.io/github/workflow/status/ihabfallahy2/dynamoss/Release/master?logo=github&style=flat-square" alt="build" /></a>
-  <a href="https://lgtm.com/projects/g/ihabfallahy2/dynamoss/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/g/ihabfallahy2/dynamoss.svg?logo=lgtm&style=flat-square" alt="Language grade: JavaScript" /></a>
-</p>
 <!-- [END BADGES] -->
 
 # Dynamoss
