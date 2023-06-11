@@ -1,0 +1,8 @@
+- label: Maven
+  icon: maven
+  message: Spring Boot
+
+- label: "BOT"
+  icon: airbnb
+  message: "The Pull Request & jobs in Progress."
+  color: "green"
