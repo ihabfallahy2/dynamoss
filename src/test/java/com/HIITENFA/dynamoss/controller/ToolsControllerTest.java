@@ -7,7 +7,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
 import java.util.ArrayList;
@@ -26,8 +25,10 @@ public class ToolsControllerTest {
     PctoolsService pctoolsService;
 
     List<Pctools> plist;
+
     Pctools pctools;
-    Pctools mock = Mockito.mock(Pctools.class);
+
+    Pctools mock = mock(Pctools.class);
 
 
     @BeforeEach
