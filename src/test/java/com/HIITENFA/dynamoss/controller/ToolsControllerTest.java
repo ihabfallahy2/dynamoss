@@ -5,15 +5,15 @@ import com.HIITENFA.dynamoss.service.PctoolsService;
 import org.bson.types.ObjectId;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.mockito.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.when;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.*;
 
 public class ToolsControllerTest {
 
@@ -24,13 +24,16 @@ public class ToolsControllerTest {
     PctoolsService pctoolsService;
 
     List<Pctools> plist;
+    Pctools pctools;
+    Pctools mock = Mockito.mock(Pctools.class);
+
 
     @BeforeEach
     void initializer(){
         MockitoAnnotations.openMocks(this);
 
         plist = new ArrayList<>();
-        Pctools pctools = new Pctools();
+        pctools = new Pctools();
 
         pctools.set_id(new ObjectId());
         pctools.setCod("");
@@ -43,11 +46,32 @@ public class ToolsControllerTest {
         plist.add(pctools);
 
         when(pctoolsService.findAll()).thenReturn(plist);
+        when(pctoolsService.findByField(anyString())).thenReturn(pctools);
+        doNothing().when(pctoolsService).save(mock);
+        doNothing().when(pctoolsService).deleteById(anyString());
     }
 
     @Test
     void findAllTest(){
         List<Pctools> result = demo.findAll();
-        assertEquals(result, plist);
+        assertEquals(plist, result);
+    }
+
+    @Test
+    void findByCodTest(){
+        Pctools result = demo.findByCod("");
+        assertEquals(pctools, result);
+    }
+
+    @Test
+    void saveTest(){
+        demo.save(pctools);
+        verify(pctoolsService,times(1)).save(pctools);
+    }
+
+    @Test
+    void deleteTest(){
+        demo.deleteById("");
+        verify(pctoolsService,times(1)).deleteById(anyString());
     }
 }
