@@ -51,7 +51,8 @@ public class ToolsServiceTest {
         plist.add(pctools);
 
         when(toolsRepository.findAll()).thenReturn(plist);
-        when(toolsRepository.findById(anyString())).thenReturn(Optional.ofNullable(pctools));
+        when(toolsRepository.findById(anyString()))
+                .thenReturn(Optional.ofNullable(pctools));
     }
 
     @Test
@@ -83,7 +84,5 @@ public class ToolsServiceTest {
         demo.deleteById("");
         verify(toolsRepository,times(1)).deleteById(anyString());
     }
-
-
 
 }
