@@ -5,15 +5,23 @@ workflows: .github/**/*
 test: src/test/**/*
 main-code: src/main/java/com/HIITENFA/dynamoss/**/*
 internal-config: src/main/java/com/HIITENFA/dynamoss/config/*
+
+# Service labels
 service-change: src/main/java/com/HIITENFA/dynamoss/service/*
 service-addition: src/main/java/com/HIITENFA/dynamoss/service/*
 service-fix: src/main/java/com/HIITENFA/dynamoss/service/*
+
+# Cotroller labels
 controller-change: src/main/java/com/HIITENFA/dynamoss/controller/*
 controller-addition: src/main/java/com/HIITENFA/dynamoss/controller/*
 controller-fix: src/main/java/com/HIITENFA/dynamoss/controller/*
+
+# Model labels
 model-change: src/main/java/com/HIITENFA/dynamoss/model/*
 model-addition: src/main/java/com/HIITENFA/dynamoss/model/*
 model-fix: src/main/java/com/HIITENFA/dynamoss/model/*
+
+# Repository labels
 repository-change: src/main/java/com/HIITENFA/dynamoss/model/*
 repository-addition: src/main/java/com/HIITENFA/dynamoss/model/*
 repository-fix: src/main/java/com/HIITENFA/dynamoss/model/*
