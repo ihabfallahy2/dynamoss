@@ -8,18 +8,17 @@ Dynamoss es una aplicacion backend multi-proposito.
 - Se encargara de automaticamente obtener datos de servicios de terceros, procesarlos acorde a la necesidad y mandarlo al frontend.
 - Se encargara de todo lo relacionado a las Sesiones de los usuarios.
 
-## Deployment
+## Deployment [DEPRECATED]
 The deployment is done by railway
 
-- BASE-URL -> https://dynamoss-production.up.railway.app/api/v1/pctools/
-- PCTOOLS-SERVICE -> https://BASE-URL/api/v1/pctools/
+- BASE-URL -> ~~https://dynamoss-production.up.railway.app/api/v1/pctools/~~
+- PCTOOLS-SERVICE -> ~~https://BASE-URL/api/v1/pctools/~~
 
-## Servicios
-- Servicio de tiendas Pctools - [PcTools Service](https://dynamoss-production.up.railway.app/api/v1/pctools/)
-- Servicio obtencion de info github - [...](https://Servicio_ a_la_espera_de_implementarse)
-
-## Swagger
-UI para la visualizacion de los servicios de Dynamoss [Swagger UI](https://dynamoss-production.up.railway.app/swagger-ui/index.html#/)
+## Servicios [DEPRECATED]
+- Servicio de tiendas Pctools - ~~[PcTools Service](https://dynamoss-production.up.railway.app/api/v1/pctools/)~~
+- Servicio obtencion de info github - ~~[...](https://Servicio_ a_la_espera_de_implementarse)~~
+## Swagger [DEPRECATED]
+UI para la visualizacion de los servicios de Dynamoss ~~[Swagger UI](https://dynamoss-production.up.railway.app/swagger-ui/index.html#/)~~
 
 ## Instalacion
 
