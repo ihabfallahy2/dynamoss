@@ -1,23 +1,50 @@
-<!-- [START BADGES] -->
-<!-- Please keep comment here to allow auto update -->
-<p align="center">
-  <a href="https://github.com/ihabfallahy2/dynamoss/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ihabfallahy2/dynamoss?style=flat-square" alt="MIT License" /></a>
-  <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/language-TypeScript-blue.svg?style=flat-square" alt="Language" /></a>
-  <a href="https://github.com/ihabfallahy2/dynamoss/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
-  <a href="https://github.com/marketplace/actions/dynamoss"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=marketplace&color=0076D6&style=flat-square&logo=google-chrome&logoColor=0076D6" alt="website" /></a>
-</p>
-<!-- [END BADGES] -->
-
 # Dynamoss
-Dynamoss es un software backend multipropositos, servira como base para mucho otros proyectos a futuro que en principio no estan relacionados.
 
-## Deployment
+Dynamoss es una aplicacion backend multi-proposito.
+
+- Dynamoss se encargara de recibir request del frontend procesar dicha request y responder acorde a lo pedido.
+- Se encargara de centralizar recursos que usen las distintas aplicaciones frontend, reduciendo asi la carga sobre estas mismas.
+- Se encargara de almacenar todos los datos del frontend(User Login, User Configuration, etc).
+- Se encargara de automaticamente obtener datos de servicios de terceros, procesarlos acorde a la necesidad y mandarlo al frontend.
+- Se encargara de todo lo relacionado a las Sesiones de los usuarios.
+
+## Deployment [DEPRECATED]
 The deployment is done by railway
 
-- BASE-URL -> https://dynamoss-production.up.railway.app/
-- PCTOOLS-SERVICE -> https://BASE-URL/api/v1/pctools/
+- BASE-URL -> ~~https://dynamoss-production.up.railway.app/api/v1/pctools/~~
+- PCTOOLS-SERVICE -> ~~https://BASE-URL/api/v1/pctools/~~
 
-## Swagger
-https://dynamoss-production.up.railway.app/swagger-ui/index.html#/
+## Servicios [DEPRECATED]
+- Servicio de tiendas Pctools - ~~[PcTools Service](https://dynamoss-production.up.railway.app/api/v1/pctools/)~~
+- Servicio obtencion de info github - ~~[...](https://Servicio_ a_la_espera_de_implementarse)~~
+## Swagger [DEPRECATED]
+UI para la visualizacion de los servicios de Dynamoss ~~[Swagger UI](https://dynamoss-production.up.railway.app/swagger-ui/index.html#/)~~
 
-©2023 HIITENFA, Inc. Todos los derechos reservados
+## Instalacion
+
+Clona este proyecto usando [git](https://git-scm.com/).
+
+```bash
+git clone https://github.com/ihabfallahy2/dynamoss.git
+```
+
+## Uso local
+
+```java
+#comando 'clean install'
+clean install
+
+#comando 'run'
+spring-boot:run
+
+```
+
+## Contribuciones
+
+Son bienvenidos los pull request. Para cambios importantes, porfavor abrir una issue primero para discutir los cambios que se quieren realizar.
+
+Por favor aseguraos de tener actualizados los tests como es debido.
+
+## Licencia
+
+[MIT](https://choosealicense.com/licenses/mit/) ©2023 HIITENFA, Inc. Todos los derechos reservados
