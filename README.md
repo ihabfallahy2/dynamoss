@@ -9,7 +9,7 @@ Dynamoss es una aplicacion backend multi-proposito.
 - Se encargara de todo lo relacionado a las Sesiones de los usuarios.
 
 ## Deployment [DEPRECATED]
-The deployment is done by railway
+The deployment is now done by railway. Please refer to issue #55 for the new deployment process.
 
 - BASE-URL -> ~~https://dynamoss-production.up.railway.app/api/v1/pctools/~~
 - PCTOOLS-SERVICE -> ~~https://BASE-URL/api/v1/pctools/~~
