@@ -68,6 +68,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>dynamoss</finalName>
 	</build>
 
 </project>
