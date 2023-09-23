@@ -1,3 +1,4 @@
+EXPOSE 8080
 FROM openjdk:17
 LABEL maintainer="Ihab Fallahy"
 COPY target/dynamoss.jar dynamoss.jar
