@@ -8,17 +8,17 @@ Dynamoss es una aplicacion backend multi-proposito.
 - Se encargara de automaticamente obtener datos de servicios de terceros, procesarlos acorde a la necesidad y mandarlo al frontend.
 - Se encargara de todo lo relacionado a las Sesiones de los usuarios.
 
-## Deployment [DEPRECATED]
-The deployment is now done by railway. Please refer to issue #55 for the new deployment process.
+## Deployment
+The deployment is now done by render (previously was done on reailway). Please refer to issue #55 for the new deployment process.
 
-- BASE-URL -> ~~https://dynamoss-production.up.railway.app/api/v1/pctools/~~
-- PCTOOLS-SERVICE -> ~~https://BASE-URL/api/v1/pctools/~~
+- BASE-URL -> https://synamoss-service.onrender.com
+- PCTOOLS-SERVICE -> https://synamoss-service.onrender.com/api/v1/pctools
 
-## Servicios [DEPRECATED]
-- Servicio de tiendas Pctools - ~~[PcTools Service](https://dynamoss-production.up.railway.app/api/v1/pctools/)~~
-- Servicio obtencion de info github - ~~[...](https://Servicio_ a_la_espera_de_implementarse)~~
-## Swagger [DEPRECATED]
-UI para la visualizacion de los servicios de Dynamoss ~~[Swagger UI](https://dynamoss-production.up.railway.app/swagger-ui/index.html#/)~~
+## Servicios
+- Servicio de tiendas Pctools - [PCTOOLS](https://synamoss-service.onrender.com/api/v1/pctools)
+- Servicio obtencion de info github - [https://Servicio_ a_la_espera_de_implementarse](https://synamoss-service.onrender.com/)
+## Swagger
+UI para la visualizacion de los servicios de Dynamoss [Swagger UI](https://synamoss-service.onrender.com/swagger-ui/index.html#/)
 
 ## Instalacion
 
