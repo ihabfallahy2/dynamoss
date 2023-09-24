@@ -19,7 +19,7 @@ on:
     branches: [ "master" ]
   schedule:
     - cron: '42 13 * * 4'
-
+    - cron: '22 1 * * 1'
 jobs:
   analyze:
     name: Analyze
