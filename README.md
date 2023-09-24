@@ -22,7 +22,7 @@ UI para la visualizacion de los servicios de Dynamoss ~~[Swagger UI](https://dyn
 
 ## Instalacion
 
-Clona este proyecto usando [git](https://git-scm.com/).
+Clonar este proyecto usando [git](https://git-scm.com/).
 
 ```bash
 git clone https://github.com/ihabfallahy2/dynamoss.git
