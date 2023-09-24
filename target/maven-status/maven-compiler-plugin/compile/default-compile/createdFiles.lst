@@ -1,0 +1,7 @@
+com\HIITENFA\dynamoss\repository\PctoolsRepository.class
+com\HIITENFA\dynamoss\config\SecurityConfig.class
+com\HIITENFA\dynamoss\DynamossApplication.class
+com\HIITENFA\dynamoss\config\SwaggerConfiguration.class
+com\HIITENFA\dynamoss\controller\PctoolsController.class
+com\HIITENFA\dynamoss\model\Pctools.class
+com\HIITENFA\dynamoss\service\PctoolsService.class
