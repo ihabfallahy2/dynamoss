@@ -6,6 +6,7 @@ jobs:
   check_comments:
     name: Check comments for /deploy
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - name: Check for Command
         id: command
