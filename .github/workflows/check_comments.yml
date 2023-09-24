@@ -17,10 +17,11 @@ jobs:
           allow-edits: "false"
           permission-level: admin
       - name: Deploy
-        # Only run this step if the branch is main
-        if: github.ref == 'refs/heads/develop'
+        # Only run this step if the branch is main or develop
+        if: ${{ (github.ref == 'refs/heads/main') || (github.ref == 'refs/heads/develop') }}
         env:
           deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+          repo-token:: ${{ secrets.GITHUB_TOKEN }}
         run: |
          echo "Deploying last changes on env:pre-production platform:render"
          curl "$deploy_url"
