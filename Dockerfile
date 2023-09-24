@@ -1,5 +1,4 @@
 FROM openjdk:17
-EXPOSE 8080
-LABEL maintainer="Ihab Fallahy"
+LABEL maintainer="HIITENFA"
 COPY target/dynamoss.jar dynamoss.jar
 ENTRYPOINT ["java", "-jar", "/dynamoss.jar"]
