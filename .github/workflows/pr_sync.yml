@@ -20,4 +20,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           SOURCE_BRANCH: "master"
-          TARGET_BRANCH: "develop,experiment"
+          TARGET_BRANCH: "develop"
