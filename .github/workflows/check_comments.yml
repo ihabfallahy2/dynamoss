@@ -6,6 +6,7 @@ jobs:
   check_comments:
     name: Check comments for /deploy
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - name: Check for Command
         id: command
@@ -16,12 +17,12 @@ jobs:
           reaction-type: "eyes"
           allow-edits: "false"
           permission-level: admin
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy
         # Only run this step if the branch is main or develop
         if: ${{ (github.ref == 'refs/heads/main') || (github.ref == 'refs/heads/develop') }}
         env:
           deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
-          repo-token:: ${{ secrets.GITHUB_TOKEN }}
         run: |
          echo "Deploying last changes on env:pre-production platform:render"
          curl "$deploy_url"
